@@ -1,0 +1,111 @@
+/* Sección de contacto */
+.contact-section {
+    display: flex;
+    flex-direction: row; /* Alinea elementos horizontalmente por defecto */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px; /* Espaciado entre el botón y la lista */
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
+}
+
+/* Botón de contacto */
+.contact-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    order: 0; /* Mantiene el botón al inicio */
+}
+
+/* Efecto hover en el botón */
+.contact-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Lista de ítems */
+.contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Espaciado entre ítems */
+}
+
+/* Ítems de la lista */
+.contact-item {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover en ítems */
+.contact-item:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+/* Íconos dentro de los ítems */
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+/* === Estilos responsivos === */
+
+/* Para pantallas medianas (≤ 768px) */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* Alinea los elementos en columna */
+        gap: 15px;
+    }
+
+    .contact-button {
+        width: 100%; /* El botón ocupa todo el ancho */
+        text-align: center;
+        order: 1; /* Coloca el botón al final en pantallas pequeñas */
+    }
+
+    .contact-list {
+        flex-direction: row; /* Mantiene los íconos alineados horizontalmente */
+        justify-content: center;
+        gap: 10px; /* Espaciado más pequeño entre ítems */
+    }
+
+    .contact-icon {
+        font-size: 1.3rem; /* Reduce ligeramente el tamaño de los íconos */
+    }
+}
+
+/* Para pantallas pequeñas (≤ 480px) */
+@media (max-width: 480px) {
+    .contact-section {
+        flex-direction: column; /* Mantiene los elementos en columna */
+        gap: 10px;
+    }
+
+    .contact-list {
+        justify-content: center;
+        flex-wrap: wrap; /* Asegura que los íconos se ajusten */
+    }
+
+    .contact-button {
+        width: 100%; /* Botón ocupa el ancho completo */
+        order: 1; /* Siempre aparece al final */
+    }
+
+    .contact-icon {
+        font-size: 1.2rem; /* Íconos ligeramente más pequeños */
+    }
+}
