@@ -15,6 +15,8 @@ export default {
           100: "#E2E2D5",
           200: "#888883",
         },
+        linkedinColor: "#0274B3",
+        linkTreeColor: "#3bd559",
       },
       
     },

@@ -3,6 +3,7 @@ import './App.css'
 import AnimatedBackground from './Components/AnimatedBackground'
 import Navbar from './Components/Navbar'
 import ContactSection from './Components/ContactSection'
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (

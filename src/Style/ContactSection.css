@@ -42,7 +42,6 @@
 /* Ítems de la lista */
 .contact-item {
     padding: 10px;
-    background-color: black;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -54,7 +53,6 @@
 /* Efecto hover en ítems */
 .contact-item:hover {
     transform: scale(1.1);
-    background-color: #333;
 }
 
 /* Íconos dentro de los ítems */
